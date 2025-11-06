@@ -54,3 +54,32 @@ pip install -r requirements.txt
 streamlit run app.py
 
 
+           ┌──────────────────────────┐
+           │  User uploads PDF file   │
+           └────────────┬─────────────┘
+                        │
+                        ▼
+          ┌──────────────────────────┐
+          │ Extract text (PyMuPDF)   │
+          └────────────┬─────────────┘
+                        │
+                        ▼
+          ┌──────────────────────────┐
+          │  Send text to LLM API    │
+          │ (GPT-3.5 / GPT-4 / Llama)│
+          └────────────┬─────────────┘
+                        │
+                        ▼
+          ┌──────────────────────────┐
+          │ Generate structured      │
+          │ summary (Findings, Dx,   │
+          │ Recommendations)         │
+          └────────────┬─────────────┘
+                        │
+                        ▼
+          ┌──────────────────────────┐
+          │ Display in Streamlit UI  │
+          └──────────────────────────┘
+
+
+
