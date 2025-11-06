@@ -15,39 +15,42 @@ AI-Powered Web App that summarizes complex medical reports into concise findings
 ## Tech Stack
 Streamlit | OpenAI GPT-3.5 | PyMuPDF
 
+Expected Impact
+
+Before MediSummarizer:
+
+Report Review Time: 10–15 minutes per report
+
+Summary Consistency: Manual
+
+Accessibility for Patients: Low
+
+After MediSummarizer:
+
+Report Review Time: Around 30 seconds
+
+Summary Consistency: Automated and structured
+
+Accessibility for Patients: High (simplified summaries)
+
+Outcome:
+Doctors save time, hospitals become more efficient, and patients can easily understand their medical reports.
+
+## Streamlit demo link: https://medmind-correctones.streamlit.app/
+
+ Possible Extensions (Future Enhancements)
+
+Add voice summarization (convert text summaries to speech for accessibility).
+
+Integrate disease classification to detect report type automatically.
+
+Allow batch summarization (upload and summarize multiple reports at once).
+
+Add multilingual output (translate summaries for non-English-speaking patients).
+
 ## Run Locally
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 
 
-### 📊 ** Expected Impact**
-
-| Metric | Before MediSummarizer | After MediSummarizer |
-|---------|------------------------|-----------------------|
-| Report Review Time | 10–15 mins/report | ~30 seconds |
-| Summary Consistency | Manual | Automated & structured |
-| Accessibility for Patients | Low | High (simplified summaries) |
-
-**Outcome:**  
-Doctors save time, hospitals increase efficiency, and patients understand their reports better.
-
----
-
-### 🪶 ** 5-Slide Presentation Outline**
-
-| Slide | Title | Content |
-|--------|--------|----------|
-| **1** | Problem Statement | The challenge of long, jargon-heavy medical reports. |
-| **2** | User & Context | Doctors, radiologists, and patients; report review frequency. |
-| **3** | Solution | How MediSummarizer automates summarization using LLMs. |
-| **4** | Workflow / Architecture | Diagram of data flow (Upload → Extract → Summarize → Display). |
-| **5** | Impact & Demo | Efficiency metrics + https://medmind-correctones.streamlit.app |
-
----
-
-### 🌐 ** Possible Extensions (Future Enhancements)**
-- Add **voice summarization** (text-to-speech for accessibility).  
-- Integrate **disease classification** (e.g., detect report type).  
-- Allow **batch summarization** (upload multiple reports).  
-- Add **multilingual output** (translate summary for non-English patients).  
